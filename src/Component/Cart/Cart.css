@@ -1,68 +1,66 @@
 /* Cart.css */
 
 .cart-container {
-    padding: 20px;
-    width: 100%;
-    box-shadow: 2px 2px 8px rgb(52,152,219);
-    border: 10px solid rgb(52,152,219);
-    height:554px;
-    position: relative;
-  }
-  .cart-container>h1{
-    color:white;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .cart {
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background:linear-gradient(rgb(52,152,219),rgb(112, 194, 249));
-    border: none;
-    color:white;
-  }
-  .total-price{
-    display:flex;
-    color:white;
-    align-items: center;
-    margin-top: 4rem;
-    justify-content: space-between;
-    background:linear-gradient(rgb(219,52,152),rgb(246, 140, 204));
-    padding:10px 20px;
-    position: absolute;
-    width:93%;
-    bottom:20px;
-  }
-  .cart-qty-price{
-    display: flex;
-  }
-  .total-price>p{
-    font-size: 2rem;
-    font-weight: 800;
-  }
-  .cartEmpty{
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 4rem;
-    color:rgb(219,52,152);
-    font-weight: 800;
-  }
-  .cart-empty-container{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:100%;
-    justify-content: center;
-    padding:20px;
-    height:400px;
-  }
-  .cart-empty-container>img{
-    width:200px;
-  }
+  padding: 20px;
+  width: 100%;
+  box-shadow: 2px 2px 8px rgb(52, 152, 219);
+  border: 10px solid rgb(52, 152, 219);
+  height: 554px;
+  position: relative;
+}
+.cart-container > h1 {
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
-  
+.cart {
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(rgb(52, 152, 219), rgb(112, 194, 249));
+  border: none;
+  color: white;
+}
+.total-price {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin-top: 4rem;
+  justify-content: space-between;
+  background: linear-gradient(rgb(219, 52, 152), rgb(246, 140, 204));
+  padding: 10px 20px;
+  position: absolute;
+  width: 93%;
+  bottom: 20px;
+}
+.cart-qty-price {
+  display: flex;
+}
+.total-price > p {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.cartEmpty {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  color: rgb(219, 52, 152);
+  font-weight: 800;
+}
+.cart-empty-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  height: 400px;
+}
+.cart-empty-container > img {
+  width: 200px;
+}

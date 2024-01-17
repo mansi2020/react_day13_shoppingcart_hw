@@ -2,11 +2,9 @@ import { useReducer, useState } from "react";
 import Cart from "../Cart/Cart";
 import "./Product.css";
 import Header from "../Header/Header";
-import Products from './../Product'
+import Products from "./../Product";
 
 const Product = () => {
-  
-
   //useReducer for manage cart data
   function reducerFn(state, action) {
     switch (action.type) {
@@ -16,15 +14,15 @@ const Product = () => {
           ...state,
           Products: state.Products.map((item) => {
             if (item.id == action.id) {
-              newTotalPrice  = state.totalPrice - item.price;
-              return { 
+              newTotalPrice = state.totalPrice - item.price;
+              return {
                 ...item,
-                value:item.value>0 ? item.value-1 :item.value
+                value: item.value > 0 ? item.value - 1 : item.value,
               };
             }
-            return item;  
+            return item;
           }),
-          totalPrice : newTotalPrice,
+          totalPrice: newTotalPrice,
         };
 
       case "increase":
@@ -33,15 +31,15 @@ const Product = () => {
           ...state,
           Products: state.Products.map((item) => {
             if (item.id == action.id) {
-              newTotalPrice1  = state.totalPrice + item.price;
-              return { 
+              newTotalPrice1 = state.totalPrice + item.price;
+              return {
                 ...item,
-                value:item.value+1
+                value: item.value + 1,
               };
             }
-            return item;  
+            return item;
           }),
-          totalPrice : newTotalPrice1,
+          totalPrice: newTotalPrice1,
         };
 
       default:
@@ -49,7 +47,7 @@ const Product = () => {
     }
   }
   const [state, dispatch] = useReducer(reducerFn, {
-    Products:Products,
+    Products: Products,
     totalPrice: 0,
   });
   return (

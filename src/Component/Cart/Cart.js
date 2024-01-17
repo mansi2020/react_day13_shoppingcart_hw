@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
-import emptycart from './empty_cart.svg'
+import emptycart from "./empty_cart.svg";
 
 const Cart = (props) => {
   // state for crat data
@@ -25,7 +25,6 @@ const Cart = (props) => {
           <img src={emptycart} alt="" />
           <p className="cartEmpty">Cart is Empty!</p>
         </div>
-        
       ) : (
         props.productData.Products.map((item) => {
           if (item.value >= 1) {
